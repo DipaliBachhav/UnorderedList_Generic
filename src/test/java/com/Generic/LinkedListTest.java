@@ -22,6 +22,10 @@ public class LinkedListTest {
         assertFalse(LL.isEmpty());
         Assert.assertEquals(3, LL.length());
     }
+    @Test
+        public void testLinkedList_shouldDataPresent() {
+            Assert.assertTrue(LinkedListMain.searchData("A"));
+        }
 
 
 }

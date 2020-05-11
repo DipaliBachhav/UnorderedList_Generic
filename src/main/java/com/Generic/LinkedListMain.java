@@ -29,4 +29,17 @@ package com.Generic;
             tail=getNewNode;
             return data;
         }
+
+        public static <E extends Comparable<E>> boolean searchData(E data) {
+            Node current = head;
+            int counter = 1;
+            if (data == current.data) {
+                return true;
+            }
+            if (current != null && current.data != data) {
+                current = current.next;
+                counter++;
+            }
+            return true;
+        }
 }
